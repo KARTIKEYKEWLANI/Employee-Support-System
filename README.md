@@ -1,4 +1,4 @@
-# Customer Support Ticketing System
+# Employee Support  System
 
 Full-stack ticketing platform built with React, Spring Boot, and MySQL.
 
@@ -40,26 +40,26 @@ Frontend runs on `http://localhost:5173` by default.
 
 - `POST /auth/register`
 - `POST /auth/login`
-- `POST /tickets`
-- `GET /tickets`
-- `GET /tickets/{id}`
-- `PUT /tickets/{id}/status`
-- `PUT /tickets/{id}/assign`
-- `PUT /tickets/{id}/team`
-- `PUT /tickets/{id}/queue`
-- `GET /tickets/{id}/comments`
-- `POST /tickets/{id}/comments`
-- `GET /tickets/{id}/rating`
-- `POST /tickets/{id}/rating`
-- `PUT /tickets/{id}/tags`
-- `GET /tickets/tags`
-- `POST /tickets/{id}/attachments`
-- `GET /tickets/{id}/attachments`
+- `POST /approval`
+- `GET /approval`
+- `GET /approval/{id}`
+- `PUT /approval/{id}/status`
+- `PUT /approval/{id}/assign`
+- `PUT /approval/{id}/team`
+- `PUT /approval/{id}/queue`
+- `GET /approval/{id}/comments`
+- `POST /approval/{id}/comments`
+- `GET /approval/{id}/rating`
+- `POST /approval/{id}/rating`
+- `PUT /approval/{id}/tags`
+- `GET /approval/tags`
+- `POST /approval/{id}/attachments`
+- `GET /approval/{id}/attachments`
 - `GET /attachments/{id}/download`
-- `GET /tickets/export`
-- `PUT /tickets/{id}/archive`
-- `PUT /tickets/{id}/restore`
-- `GET /tickets/analytics`
+- `GET /approval/export`
+- `PUT /approval/{id}/archive`
+- `PUT /approval/{id}/restore`
+- `GET /approval/analytics`
 - `GET /users/admins`
 - `GET /users/assignable`
 - `GET /users`
@@ -83,5 +83,5 @@ Frontend runs on `http://localhost:5173` by default.
 - Attachments are stored locally under `app.storage.dir`.
 - SLA timers are set per priority using `app.sla.low-hours`, `app.sla.medium-hours`, and `app.sla.high-hours`.
 - Tags, search filters, attachments, SLA info, and CSV export are available in the admin UI.
-- Users are soft-deactivated (not hard deleted) and tickets are archived/restored.
+- Users are soft-deactivated (not hard deleted) and approval are archived/restored.
 - Roles include `ROLE_ADMIN`, `ROLE_AGENT` (support staff), and `ROLE_USER` (customers).
